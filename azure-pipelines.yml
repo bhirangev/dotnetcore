@@ -16,7 +16,7 @@ steps:
   inputs:
     azureSubscription: 'azureappservice'
     AppConfigurationEndpoint: 'https://azdevopsapp.azconfig.io'
-    ConfigurationFile: 'appconfig.yml'
+    ConfigurationFile: 'appconfig.json'
     Strict: false
 
 - script: |
