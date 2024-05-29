@@ -12,6 +12,12 @@ pool:
 steps:
 - script: echo Sri Gajanan Prasann!
   displayName: 'Run a one-line script'
+- task: AzureAppConfigurationPush@6
+  inputs:
+    azureSubscription: 'azureappservice'
+    AppConfigurationEndpoint: 'https://azdevopsapp.azconfig.io'
+    ConfigurationFile: 'appconfig'
+    Strict: false
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
